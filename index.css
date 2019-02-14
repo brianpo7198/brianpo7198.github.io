@@ -1,0 +1,175 @@
+/* left bar *4  */
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -120px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 50px; /* 15px padding */
+    width: 50px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+#about {
+    top: 200px;
+    background-image: url("https://i.ytimg.com/vi/YntUIVDMy-g/hqdefault.jpg");
+    background-size: 100%;
+     background-repeat: round;
+     
+}
+#hello {
+    top: 300px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpA5k--HyMmyLzZ65l8z2L-RXqbBMowlefzPzzUZqfsuCTXXi7");
+    background-size: 100%;
+     background-repeat: round;
+     
+}
+#how {
+    top: 400px;
+    background-image: url("https://cdn2.akdapi.com/images/20130504/2834991-lg-CKyA26a0AAA.jpeg");
+    background-size: 100%;
+     background-repeat: round;
+     
+}
+#are {
+    top: 500px;
+    background-image: url("welcome.png");
+    background-size: 100%;
+     background-repeat: round;
+    background-color:rgba(0, 255, 255,0.3);
+     
+}
+
+/* top drop down bar */
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  margin-top: -10px; 
+  right: -40px;
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* css about div in main page's content */
+#flex-container {
+  display:flex;
+  flex-flow: row wrap;
+  margin-left: 70px;
+  
+}
+
+ #main,  #member ,#header {
+  margin: 5px;
+  padding: 15px;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+#header {
+  background-color:rgba(204,230,255,0.3);
+  order: 3;
+  display: table-cell;
+  width: 90%;
+  color: aqua;
+  text-shadow: 0 0 5px #FF0000, 0 0 5px #FF00FF;
+  }
+
+#main {
+  background-color:rgba(204,230,255,0.3);
+  order: 0;
+  height: auto;
+  width: 90%;
+  color: aqua;
+  text-shadow: 0 0 5px #FF0000, 0 0 5px #FF00FF;
+}
+
+
+#member {
+  background-color:rgba(204,230,255,0.3);
+  order: 1;
+  width: 90%;
+  color: aqua;
+  text-shadow: 0 0 5px #FF0000, 0 0 5px #FF00FF;
+}
+
+#main h2 {
+  margin: 0px 0px 3px 0px;
+  
+  -webkit-column-span: all; 
+  
+}
+#cb{
+	font-size: 20px;
+}
+
+#info_main, #info_member{
+	visibility : hidden;
+}

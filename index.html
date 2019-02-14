@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anime Center</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="body.css" />
+    <script type="text/javascript" src="testing.js">
+        
+    </script>
+    <script type="text/javascript">	
+        function check_main() {
+				var x = document.getElementById("history_main").checked;
+				if (x)
+				{
+					document.getElementById("info_main").style.visibility = "visible";
+					history = true;
+				} else{
+					document.getElementById("info_main").style.visibility = "hidden";
+					history = false;
+				}
+			}
+			
+			function check_member() {
+				var x = document.getElementById("member_checkbox").checked;
+				if (x)
+				{
+					document.getElementById("info_member").style.visibility = "visible";
+					history = true;
+				} else{
+					document.getElementById("info_member").style.visibility = "hidden";
+					history = false;
+				}
+			}
+			function check_contact() {
+				var x = document.getElementById("contact_checkbox").checked;
+				if (x)
+				{
+					document.getElementById("info_contact").style.visibility = "visible";
+					history = true;
+				} else{
+					document.getElementById("info_contact").style.visibility = "hidden";
+					history = false;
+				}
+			}</script>
+</head>
+
+<body id=bgimage>
+    <script type='text/javascript'>
+        //  alert(sessionStorage.imagecount);
+   //alert(sessionStorage.autostate);
+       if (sessionStorage.imagecount == undefined) {                   sessionStorage.imagecount = 0;                   //    alert(sessionStorage.imagecount);
+        document.body.style.backgroundImage="url('"+
+           bgimage[sessionStorage.imagecount]+"')";
+           sessionStorage.autostate = 2;
+             //         alert(sessionStorage.autostate);
+       }     
+       else if (sessionStorage.autostate == 1) {
+           document.body.style.backgroundImage="url('"
+            +bgimage[sessionStorage.imagecount]+"')";
+           window.clearInterval(autochbg);
+           autobg();
+       } else{
+           document.body.style.backgroundImage="url('"
+            +bgimage[sessionStorage.imagecount]+"')"; 
+       }
+    </script>
+    
+    <div class="navbar">
+  <a href="index.html" id=dropbtn>Home</a>
+  <div class="dropdown">
+  <button class="dropbtn">Background
+      <i class="fa fa-caret-down" style="font-size: 24px"></i>
+  </button>
+  <div class="dropdown-content">
+  <a onclick="return bg1(); " onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">Charlotte</a>
+  <a onclick="return bg2();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">LoveLive</a>
+  <a onclick="return bg3();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">Fate系列</a>
+  <a onclick="return bg4();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">SAO</a>
+  <a onclick="return bg5();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">RE:從零開始的異世界生活</a>
+  <a onclick="return bg6();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">艦隊collection</a>
+  <a onclick="return bg7();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">干物妹</a>
+  <a onclick="return bg8();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">不起眼女主角培育法</a>
+  <a onclick="return bg9();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">NoGameNoLife</a>
+  <a onclick="return autobg();"onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">Auto</a>
+  </div>
+  </div>
+</div>
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="new%20season.html" id="about"></a>
+        <a href="old%20season.html" id="hello"></a>
+        <a href="vote.html" id="how"></a>
+        <a href="join%20us.html" id="are"></a>
+       
+    </div>
+   <br><br><br>
+    　
+    　
+    　
+		<div id="flex-container" name="f2" >
+
+			<div id="main">
+				<h2>About Anime Fan Club&nbsp;&nbsp;&nbsp;
+					<cb id="cb">
+					<input id="history_main" type="checkbox" name="main" value="main" onchange="check_main();"/>
+					Show Info</cb>
+				</h2>
+				<p>
+					<info_main id="info_main">
+						Anime Fan Club is a club for anime lover to share their opinion about their favourite theme of anime.<br>
+						We are going to promote the anime culture to everyone in VTC.<br>
+						We grouped and developed the fan club in 2018<br>
+						Currently, we have less than three member.<br>
+						However, we will promote and find more support for the fan club.
+					</info_main>
+				</p>
+			</div>
+			
+			<div id="member">
+				<h2>Current Member and Contact&nbsp;&nbsp;&nbsp;
+					<cb id="cb">
+						<input id="member_checkbox" type="checkbox" name="member" value="member" onchange="check_member();"/>
+						Show Info
+					</cb>
+				</h2>
+				<p>
+					<info_member id="info_member">
+						Chan Ling Ki (Rio)  <a href="https://webmail.vtc.edu.hk/default.htm">170323272@stu.vtc.edu.hk</a><br>
+						Po Sing Ho (Brian) <a href="https://webmail.vtc.edu.hk/default.htm">170168704@stu.vtc.edu.hk</a><br>
+					</info_member>
+				</p>
+			</div>
+			<br>
+<div id="header">
+   <h2> Watch MAD !!</h2> <br>
+    <iframe width="540" height="315" src="https://www.youtube.com/embed/GftT_wzRJdc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> <iframe width="540" height="315" src="https://www.youtube.com/embed/_h0L7OD_geM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe width="540" height="315" src="https://www.youtube.com/embed/JDVVJg6bqC8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+		</div>
+			
+   
+  
+</body>
+</html>

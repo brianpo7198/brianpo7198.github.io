@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>join</title>
+     <link rel="stylesheet" href="join.css" />
+     <link rel="stylesheet" href="body.css" />
+    <script type="text/javascript" src="testing.js">
+    </script>
+
+</head>
+
+<body id=bgimage>
+    <script type='text/javascript'>
+        //  alert(sessionStorage.imagecount);
+   //alert(sessionStorage.autostate);
+       if (sessionStorage.imagecount == undefined) {                   sessionStorage.imagecount = 0;                   //    alert(sessionStorage.imagecount);
+        document.body.style.backgroundImage="url('"+
+           bgimage[sessionStorage.imagecount]+"')";
+           sessionStorage.autostate = 2;
+             //         alert(sessionStorage.autostate);
+       }     
+       else if (sessionStorage.autostate == 1) {
+           document.body.style.backgroundImage="url('"
+            +bgimage[sessionStorage.imagecount]+"')";
+           window.clearInterval(autochbg);
+           autobg();
+       } else{
+           document.body.style.backgroundImage="url('"
+            +bgimage[sessionStorage.imagecount]+"')"; 
+       }
+    </script>
+      <div class="navbar">
+  <a href="main%20page.html" id=dropbtn>Home</a>
+  <div class="dropdown">
+  <button class="dropbtn">Background
+      <i class="fa fa-caret-down" style="font-size: 24px"></i>
+  </button>
+  <div class="dropdown-content">
+  <a onclick="return bg1(); " onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">Charlotte</a>
+  <a onclick="return bg2();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">LoveLive</a>
+  <a onclick="return bg3();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">Fate系列</a>
+  <a onclick="return bg4();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">SAO</a>
+  <a onclick="return bg5();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">RE:從零開始的異世界生活</a>
+  <a onclick="return bg6();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">艦隊collection</a>
+  <a onclick="return bg7();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">干物妹</a>
+  <a onclick="return bg8();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">不起眼女主角培育法</a>
+  <a onclick="return bg9();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">NoGameNoLife</a>
+  <a onclick="return autobg();"onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">Auto</a>
+  </div>
+  </div>
+</div>
+
+  <br><br><br>
+  <center><form name="join" >
+    <h1><center>Come And Join Our Anime Club</center></h1>
+     <table>
+         <tr>
+             <td>First Name:</td>
+             <td><input type="text" name="FirstName"  pattern="^[A-Z][a-z]*" title="First letter must be Capital"required="required"></td>
+         </tr>
+      <tr>
+        <td>Last Name:</td>
+        <td>
+          <input type="text" name="LastName" pattern="^[A-Z][A-Za-z" "]*" title="First letter must be Capital"required="required"/>
+        </td>
+      </tr>
+        <tr>
+        <td>Gender:</td>
+        <td>
+          <input type="radio" name="gender" value="M" required="required" />Male
+          <input type="radio" name="gender" value="F" />Female
+        </td>  
+      </tr>
+       <tr>
+        <td>Age:</td>
+        <td><input type="number" min="15" name="age" required="required"></td>
+         </tr>
+        <tr>
+        <td>Birthday:</td>
+        <td>
+          <input type="date" name="bday" title="" pattern="" required="required">
+        </td>
+      </tr>
+      <tr>
+        <td>Department study in IVE:</td>
+        <td>
+          <select name="department">
+            <option value="2">Please select one department</option>
+            <option value="BA">BA</option>
+            <option value="ENG">ENG</option>
+            <option value="IT">IT</option>
+          </select>
+        </td>  
+      </tr>
+      <tr>
+          <td>Email:</td>
+          <td>
+              <input type="email" name="email" required="required">
+          </td>
+      </tr>
+      <tr>
+          <td>Your Phone Number:</td>
+          <td><input type="tel" name="tel" pattern="[23569][0-9]{7}$" required="required" title="First number must be 2/3/5/6/9"></td>
+      </tr>
+     </table>
+     <input type="submit" value="submit">
+        <div id="mySidenav" class="sidenav">
+        <a href="new%20season.html" id="about"></a>
+        <a href="old%20season.html" id="hello"></a>
+        <a href="vote.html" id="how"></a>
+        <a href="join%20us.html" id="are"></a>
+       
+    </div>
+  </form></center>
+
+    
+</body>
+</html>

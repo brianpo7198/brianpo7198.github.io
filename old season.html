@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>old season</title>
+    <link rel="stylesheet" href="old season.css">
+    <link rel="stylesheet" href="body.css" />
+    <script type="text/javascript" src="testing.js">
+    </script>
+
+</head>
+   <body id=bgimage>
+       
+
+    <script type='text/javascript'>
+        //  alert(sessionStorage.imagecount);
+   //alert(sessionStorage.autostate);
+       if (sessionStorage.imagecount == undefined) {                   sessionStorage.imagecount = 0;                   //    alert(sessionStorage.imagecount);
+        document.body.style.backgroundImage="url('"+
+           bgimage[sessionStorage.imagecount]+"')";
+           sessionStorage.autostate = 2;
+             //         alert(sessionStorage.autostate);
+       }     
+       else if (sessionStorage.autostate == 1) {
+           document.body.style.backgroundImage="url('"
+            +bgimage[sessionStorage.imagecount]+"')";
+           window.clearInterval(autochbg);
+           autobg();
+       } else{
+           document.body.style.backgroundImage="url('"
+            +bgimage[sessionStorage.imagecount]+"')"; 
+       }
+    </script>
+      <div class="navbar">
+  <a href="main%20page.html" id=dropbtn>Home</a>
+  <div class="dropdown">
+  <button class="dropbtn">Background
+      <i class="fa fa-caret-down" style="font-size: 24px"></i>
+  </button>
+  <div class="dropdown-content">
+  <a onclick="return bg1(); " onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">Charlotte</a>
+  <a onclick="return bg2();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">LoveLive</a>
+  <a onclick="return bg3();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">Fate系列</a>
+  <a onclick="return bg4();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">SAO</a>
+  <a onclick="return bg5();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">RE:從零開始的異世界生活</a>
+  <a onclick="return bg6();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">艦隊collection</a>
+  <a onclick="return bg7();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">干物妹</a>
+  <a onclick="return bg8();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">不起眼女主角培育法</a>
+  <a onclick="return bg9();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">NoGameNoLife</a>
+  <a onclick="return autobg();"onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">Auto</a>
+  </div>
+  </div>
+</div>
+
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="new%20season.html" id="about"></a>
+        <a href="old%20season.html" id="hello"></a>
+        <a href="vote.html" id="how"></a>
+        <a href="join%20us.html" id="are"></a>
+       
+    </div>
+    <br>
+    <br>
+    <h1><center>2017冬季(1月)推介</center></h1>
+    <center><table border="1"><tr>
+     <th>小林家的女僕龍<br>
+        <iframe width="350" height="250" src="https://www.youtube.com/embed/v6eYDAl9PMo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></th>
+        <th>為美好的世界獻上祝福 第二季<br><iframe width="350" height="250" src="https://www.youtube.com/embed/GGqgakxItPk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></th>
+        <th>動物朋友<br><iframe width="350" height="250" src="https://www.youtube.com/embed/aeTJM-gHyD4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></th>
+    </tr></table></center>
+    
+    <h1><center>2017春季(4月)推介</center></h1>
+    <center><table border="1"><th>末日時在做什麼？有沒有空？可以來拯救嗎？<br><iframe width="350" height="250" src="https://www.youtube.com/embed/mnlNdD5oPdY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></th><th>埃羅芒阿老師<br><iframe width="350" height="250" src="https://www.youtube.com/embed/LS3hCSTrMkk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></th>
+    <th>不正經的魔術講師與禁忌教典<br><iframe width="350" height="250" src="https://www.youtube.com/embed/vI2sobca2kM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></th></table></center>
+    
+    <h1><center>2017夏季(7月)推介</center></h1>
+    <center><table border="1"><th>歡迎來到實力至上主義的教室<br><iframe width="350" height="250" src="https://www.youtube.com/embed/v3gJqTboW8o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></th>
+    <th>狂賭之淵<br><iframe width="350" height="250" src="https://www.youtube.com/embed/3Snr1bqwqdQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></th>
+    <th>徒然喜歡你<br><iframe width="350" height="250" src="https://www.youtube.com/embed/LDoK3H81BVY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></th></table></center>
+    
+    <h1><center>2017秋季(10月)推介</center></h1>
+    <center><table border="1"><th>調教咖啡廳<br><iframe width="350" height="250" src="https://www.youtube.com/embed/DEFgJRaJBNg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></th>
+    <th>魔法使的新娘<br><iframe width="350" height="250" src="https://www.youtube.com/embed/QVRKydvntcA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></th>
+    <th>干物妹小埋<br><iframe width="350" height="250" src="https://www.youtube.com/embed/JW-EqpsFZOc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></th></table></center>
+    
+</body>
+</html>

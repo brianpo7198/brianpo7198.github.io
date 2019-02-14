@@ -1,0 +1,8 @@
+#bgimage{
+    background-image: url('Secondary-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    -o-background-size:cover;
+    -moz-background-size:cover; 
+    background-attachment: fixed;
+}

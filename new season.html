@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>new season</title>
+    <link rel="stylesheet" href="new season.css">
+   <link rel="stylesheet" href="body.css" />
+    <script type="text/javascript" src="testing.js">
+    </script>
+
+</head>
+
+<body id=bgimage>
+    <script type='text/javascript'>
+        //  alert(sessionStorage.imagecount);
+   //alert(sessionStorage.autostate);
+       if (sessionStorage.imagecount == undefined) {                   sessionStorage.imagecount = 0;                   //    alert(sessionStorage.imagecount);
+        document.body.style.backgroundImage="url('"+
+           bgimage[sessionStorage.imagecount]+"')";
+           sessionStorage.autostate = 2;
+             //         alert(sessionStorage.autostate);
+       }     
+       else if (sessionStorage.autostate == 1) {
+           document.body.style.backgroundImage="url('"
+            +bgimage[sessionStorage.imagecount]+"')";
+           window.clearInterval(autochbg);
+           autobg();
+       } else{
+           document.body.style.backgroundImage="url('"
+            +bgimage[sessionStorage.imagecount]+"')"; 
+       }
+    </script>
+      <div class="navbar">
+  <a href="main%20page.html" id=dropbtn>Home</a>
+  <div class="dropdown">
+  <button class="dropbtn">Background
+      <i class="fa fa-caret-down" style="font-size: 24px"></i>
+  </button>
+  <div class="dropdown-content">
+  <a onclick="return bg1(); " onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">Charlotte</a>
+  <a onclick="return bg2();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">LoveLive</a>
+  <a onclick="return bg3();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">Fate系列</a>
+  <a onclick="return bg4();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">SAO</a>
+  <a onclick="return bg5();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">RE:從零開始的異世界生活</a>
+  <a onclick="return bg6();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">艦隊collection</a>
+  <a onclick="return bg7();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">干物妹</a>
+  <a onclick="return bg8();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">不起眼女主角培育法</a>
+  <a onclick="return bg9();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">NoGameNoLife</a>
+  <a onclick="return autobg();"onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">Auto</a>
+  </div>
+  </div>
+</div>
+
+
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="new%20season.html" id="about"></a>
+        <a href="old%20season.html" id="hello"></a>
+        <a href="vote.html" id="how"></a>
+        <a href="join%20us.html" id="are"></a>
+       
+    </div>
+    <br><br><br><br>
+    <center><h1>2018 4月新番推介</h1></center>
+    <center>
+        <h2>Watch those here>>> <a href="https://myself-bbs.com/portal.php">https://myself-bbs.com/portal.php</a></h2>
+    </center>
+    
+  <div id="wrapper">
+  <center><img src="slide1.jpg" id="slide" alt="Image 1" height="350" width="800"></center>
+  <p id="slidecaption">女神異聞錄5</p>
+  
+</div>
+<script type="text/javascript">
+var photo1=new Image();
+photo1.src="slide1.jpg";
+photo1.caption="女神異聞錄5";
+var photo2=new Image();
+photo2.src="slide2.jpg";
+photo2.caption="刀劍神域外傳 GGO";
+var photo3=new Image();
+photo3.src="slide3.jpg";
+photo3.caption="魔法少女網站";
+var photo4=new Image();
+photo4.src="slide4.jpg";
+photo4.caption="LOST SONG";
+var photo5=new Image();
+photo5.src="slide5.jpg";
+photo5.caption="我的英雄學院 第三季";
+var photo6=new Image();
+photo6.src="slide6.jpg";
+photo6.caption="極道超女";
+var photo7=new Image();
+photo7.src="slide7.jpg";
+photo7.caption="阿宅的戀愛太難";
+var photo8=new Image();
+photo8.src="slide8.jpg";
+photo8.caption="異世界居酒屋";
+var photo9=new Image();
+photo9.src="slide9.jpg";
+photo9.caption="多田君不戀愛";
+var photo10=new Image();
+photo10.src="slide10.jpg";
+photo10.caption="漫畫女孩";
+var photo11=new Image();
+photo11.src="slide11.jpg";
+photo11.caption="命運石之門 0";
+var photo12=new Image();
+photo12.src="slide12.jpg";
+photo12.caption="惡魔高校D×D HERO";
+var photo13=new Image();
+photo13.src="slide13.jpg";
+photo13.caption="東京喰種:re";
+var photo14=new Image();
+photo14.src="slide14.jpg";
+photo14.caption="ALICE OR ALICE～妹控哥哥與雙胞胎妹妹～";
+var photo15=new Image();
+photo15.src="slide15.jpg";
+photo15.caption="實驗品家庭";
+var photo16=new Image();
+photo16.src="slide16.jpg";
+photo16.caption="賽馬娘Pretty Derby";
+       
+var slide=16; 
+var num=1;
+
+function slideit(){
+  if (!document.images||!document.getElementById) return;
+  document.getElementById("slide").src=window["photo"+num].src;
+  document.getElementById("slidecaption").innerHTML=window["photo"+num].caption;
+  if (num<slide){
+    num++;
+  }
+  else {
+    num=1;
+  }
+  setTimeout(slideit,5000);
+}
+slideit();</script>
+
+</body>
+</html>

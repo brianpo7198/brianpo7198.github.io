@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vote</title>
+    <link rel="stylesheet" href="vote.css" />
+    <link rel="stylesheet" href="body.css" />
+    <script type="text/javascript" src="testing.js">
+    </script>
+
+    <script type="text/javascript">
+    
+    function vote(){
+        var value;
+        var count=0;
+        
+        for(x=1;x<16;x++){
+            if(document.getElementById('a'+x).checked){
+                //alert('count++');
+                count++;
+            }
+            //alert(count);
+        }
+        //alert('finish for loop');
+        
+        if(count==0){
+            alert('Please vote before submit ><');
+           // alert('finish function');
+        }else{
+            alert('Thank you for you vote!! LOVE YOU><');
+           
+        }
+        
+    }
+ 
+   
+     
+    </script>
+</head>
+
+<body id=bgimage>
+    <script type='text/javascript'>
+        //  alert(sessionStorage.imagecount);
+   //alert(sessionStorage.autostate);
+       if (sessionStorage.imagecount == undefined) {                   sessionStorage.imagecount = 0;                   //    alert(sessionStorage.imagecount);
+        document.body.style.backgroundImage="url('"+
+           bgimage[sessionStorage.imagecount]+"')";
+           sessionStorage.autostate = 2;
+             //         alert(sessionStorage.autostate);
+       }     
+       else if (sessionStorage.autostate == 1) {
+           document.body.style.backgroundImage="url('"
+            +bgimage[sessionStorage.imagecount]+"')";
+           window.clearInterval(autochbg);
+           autobg();
+       } else{
+           document.body.style.backgroundImage="url('"
+            +bgimage[sessionStorage.imagecount]+"')"; 
+       }
+    </script>
+      <div class="navbar">
+  <a href="main%20page.html" id=dropbtn>Home</a>
+  <div class="dropdown">
+  <button class="dropbtn">Background
+      <i class="fa fa-caret-down" style="font-size: 24px"></i>
+  </button>
+  <div class="dropdown-content">
+  <a onclick="return bg1(); " onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">Charlotte</a>
+  <a onclick="return bg2();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">LoveLive</a>
+  <a onclick="return bg3();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">Fate系列</a>
+  <a onclick="return bg4();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">SAO</a>
+  <a onclick="return bg5();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">RE:從零開始的異世界生活</a>
+  <a onclick="return bg6();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">艦隊collection</a>
+  <a onclick="return bg7();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">干物妹</a>
+  <a onclick="return bg8();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">不起眼女主角培育法</a>
+  <a onclick="return bg9();" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">NoGameNoLife</a>
+  <a onclick="return autobg();"onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">Auto</a>
+  </div>
+  </div>
+</div>
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="new%20season.html" id="about"></a>
+        <a href="old%20season.html" id="hello"></a>
+        <a href="vote.html" id="how"></a>
+        <a href="join%20us.html" id="are"></a>
+       
+    </div>
+<br><br><br>
+   <form >
+   <div class="left"><h1>Your Favorite 2018 Winter's Anime</h1><br>
+   <table border="1" >
+       <tr>
+           <th><h3>紫羅蘭永恆花園</h3>
+           <img src="Violet-Evergarden.png" alt="violet" width="200" height="100"></th>
+           <th><div class="w">自動手記人偶，是由奧蘭多博士所製造，能將人類的話語記下並書寫的機械。當初，此種機械是奧蘭多博士為其身為小說家的愛妻所製。時至今日廣泛普及於世上，有一群像人偶一樣，從事替人書寫工作的代筆者，稱為“自動手記人偶”。因戰爭而失去雙手，後來裝上了義肢的少女——女主角薇爾莉特·伊芙加登，正是一名屬於C·H郵政社的金發藍瞳自動手記人偶少女。為了能夠理解在戰場上重要之人所傳達的話語，她去往不同的地方，踏上一段尋找何謂“愛”的旅程，為不同的委託人工作，將對方的思念化作一封封的信件，將重要之言傳遞出去。</div><br></th>
+           <th><div class="r"><input type="radio" name="anime" value="1" id="a1"></div></th>
+           
+       </tr>
+       <tr>
+           <th><h3>DARLING in the FRANXX<br></h3>
+           <img src="darling.png" alt="darling" width="200" height="100"></th>
+           <th><div class="w">世界末日後的未來，當地的人類受到名為叫龍的怪物蹂躪，倖存的人類組織了名為種植園的武裝都市，並將男孩和女孩訓練成操縱者，配成一對並共同駕駛巨大機器人Franxx與叫龍作戰。其中一名男孩廣在過去被視為神童，但他在一次失敗後變得無法駕駛Franxx，這使他失去生存的慾望，直到他遇見一名叫龍和人類混血的女性操縱者02。在一次與叫龍的對戰後，02說服了廣成為自己的搭檔，而02總是稱廣為Darling。</div></th>
+           <th><input type="radio" name="anime2" value="2" id="a2"></th>
+       </tr>
+       <tr>
+       <th><h3>POP TEAM EPIC<br></h3>
+           <img src="popteam.jpg" alt="pop" width="200" height="100"></th>
+           <th><div class="w">《POP TEAM EPIC》是大川ぶくぶ創作的搞笑四格漫畫，2014年開始在竹書房旗下的網頁漫畫網站“MANGA LIFE WIN”上開始連載，並在社交網站上走紅。黃頭發比較矮的是POP子，下巴很長比較高的則是PIPI美。在漫畫中，兩人經常會因為劇情需要而出現誇張的手腳和動作！電視動畫則由曾制作《JOJO的奇妙冒險》前三部動畫的神風動畫負責。</div></th>
+           <th><input type="radio" name="anime3" value="3" id="a3"></th>
+       </tr>
+       <tr>
+        <th><h3>龍王的工作<br></h3>
+           <img src="龍王.jpg" alt="kingofloli" width="200" height="100"></th>
+           <th><div class="w">十六歲即獲得棋界二大頭銜之一“龍王”，但之後卻陷入瓶頸的男主角九頭龍八一，在三月某一天回到家裡時，發現前來迎接他的是一位名為雛鶴愛的小學三年級女生，愛要求收她為弟子。</div></th>
+           <th><input type="radio" name="anime4" value="4" id="a4"></th>
+       </tr>
+       <tr>
+           <th><h3>擅長捉弄人的高木同學<br></h3>
+           <img src="student.jpg" alt="student" width="200" height="100"></th>
+           <th><div class="w">初中生西片，和一位古靈精怪的女生高木坐在一起，高木經常捉弄遲鈍的西片，把他耍得團團轉，教室後面是他們小動作的空間。儘管西片總想著報復回去，但卻始終在高木層出不窮的點子麵前以失敗告終。</div></th>
+           <th><input type="radio" name="anime5" value="5" id="a5"></th>
+       </tr>
+         <tr>
+           <th><h3>Citrus ～柑橘味香氣～<br></h3>
+           <img src="citrus.JPG" alt="she2" width="200" height="100"></th>
+           <th><div class="w">從來沒有談過戀愛的，有趣的辣妹藍原柚子，在她母親再婚後轉移到一個新的社區和高中。在入學的第一天便因為違反校規與努力，美麗而冷酷的學生會會長藍原芽衣發生衝突。當天從學校回家，性格嚴肅的藍原芽衣與辣妹藍原柚子發現，兩人因為父母雙方再婚而成為法理上的姐妹，兩人初次見面時就對雙方留下欠佳的印象。但柚子在學校內意外發現義妹芽衣被教師強吻，強烈衝擊性的場面在柚子腦海中揮之不去。由學校至家中，柚子逐漸被芽衣的一舉一動和一言一行所深深地吸引，柚子與芽衣義姊妹兩人之間的特殊戀愛便正式展開……</div></th>
+           <th><input type="radio" name="anime6" value="6" id="a6"></th>
+       </tr>
+         <tr>
+           <th><h3>搖曳露營<br></h3>
+           <img src="hea.jpg" alt="hea" width="200" height="100"></th>
+           <th><div class="w">喜歡在淡季一個人露營的志摩凜在一次於本栖湖的露營中，遇到了為了一覽富士山而騎腳踏車來到本栖湖，卻因睡著而困在當地無法回家的同校同學各務原撫子。撫子在與凜交流過後對露營產生了興趣而加入學校的野外活動同好會，與同好會成員大垣千明與犬山葵開始了團體露營活動。故事便圍繞著凜的個人露營以及野外活動同好會的露營活動間展開。</div></th>
+           <th><input type="radio" name="anime7" value="7" id="a7"></th>
+       </tr>
+         <tr>
+           <th><h3>爆肝工程師的異世界狂想曲<br></h3>
+           <img src="LOL.PNG" alt="lol" width="200" height="100"></th>
+           <th><div class="w">在線上遊戲公司工作的29歲的程式設計師鈴木一郎，遊戲角色名「佐藤」，某天在爆肝工作後一覺醒來，發現身處荒野（龍之谷），而且身體變回15歲時的年輕模樣。一大群從未見過的怪物逼近眼前，使用遊戲介面發了3發流星雨，龍之谷的所有怪物全滅，從等級1瞬間等級封頂到達310級。</div></th>
+           <th><input type="radio" name="anime8" value="8" id="a8"></th>
+       </tr>
+         <tr>
+           <th><h3>愛在雨過天晴時<br></h3>
+           <img src="love.jpg" alt="love" width="200" height="100"></th>
+           <th><div class="w">橘晶，高中2年級，17歲。不擅長表達感情的她，其實有單戀的對象，就是打工的家庭餐廳店長──近藤正己。於青春十字路口停滯不前的她，與面臨人生折返點的他，由這兩人紡織而成的小小戀曲，開奏。</div></th>
+           <th><input type="radio" name="anime9" value="9" id="a9"></th>
+       </tr>
+       <tr>
+           <th><h3>愛吃拉麵的小泉同學<br></h3>
+           <img src="hungry.jpg" alt="hungry" width="200" height="100"></th>
+           <th><div class="w">高中生大澤悠的班上，來了一位個性冷酷寡言且神秘，不願與他人打交道的神秘轉學生─小泉。之後大澤無意中發現，這名轉學生竟然是每天尋訪美味拉麵的拉麵達人，關於拉麵美食的美味喜劇故事就此展開。</div></th>
+           <th><input type="radio" name="anime10" value="10" id="a10"></th>
+       </tr>
+       <tr>
+           <th><h3>OVERLORD 第二季<br></h3>
+           <img src="overload.jpg" alt="over" width="200" height="100"></th>
+           <th><div class="w">過去曾一度引起極大話題的網路遊戲「YGGDRASIL」，其原本應該靜靜的迎接停止一切服務的，只是沒想到時間一到卻造成了玩家無法登出！面對突如其來擁有自我意識的 NPC 與公會外那不曾見過的異世界，在現實世界中只是位喜好電玩的青年現在卻變成了有著骷髏外表的最強魔法師「飛鼠」，他將率領公會展開一場前所未有的傳說。</div></th>
+           <th><input type="radio" name="anime11" value="11" id="a11"></th>
+       </tr>
+       <tr>
+           <th><h3>比宇宙還遠的地方<br></h3>
+           <img src="far.jpg" alt="far" width="200" height="100"></th>
+           <th><div class="w">無論何時，我們的第一步總是從好奇心開始。不曾看過的風景，不曾聽過的聲音，不曾聞過的味道，不曾摸過的質感，不曾嘗過的食物，以及不曾感受過的澎湃。為了重拾不知何時忘卻的記憶碎片和不知何時舍棄的感動的旅途。 在到達終點的時候，我們會想些什麼呢？ 40度的咆哮，50度的瘋狂，60度的吶喊，跨越荒蕪的海源到達原生地域。 在地球的天邊，遠離文明的南方盡頭。 這是向南極進發的四位女孩子的旅行物語。我們通過她們回想起生於明日的光輝！</div></th>
+           <th><input type="radio" name="anime12" value="12" id="a12"></th>
+       </tr>
+       <tr>
+           <th><h3>酒鬼妹子<br></h3>
+           <img src="bar.jpg" alt="bar" width="200" height="100"></th>
+           <th><div class="w">老家在岡山的天月滿，因為工作緣故來只身一人來到東京，入住春野公寓，與性格迥異的三位女生開始了合租生活。</div></th>
+           <th><input type="radio" name="anime13" value="13" id="a13"></th>
+       </tr>
+       <tr>
+           <th><h3>學園奶爸<br></h3>
+           <img src="school.jpg" alt="school" width="200" height="100"></th>
+           <th><div class="w">鹿島龍一和年幼的弟弟鹿島虎太郎因一場空難失去了雙親，兩兄弟被一樣在同場空難失去兒子和兒媳婦的森之宮學園理事長收養，但交換條件卻是龍一必須在學園裡的褓母室擔任褓母…</div></th>
+           <th><input type="radio" name="anime14" value="14" id="a14"></th>
+       </tr>
+       <tr>
+           <th><h3>Slow Start<br></h3>
+           <img src="slow.jpg" alt="slow" width="200" height="100"></th>
+           <th><div class="w">16歲中學三年級學生一之瀨花名比其他人晚了一年上高中，不過這件事沒有告訴同學。雖然別人可能會認為沒什麼大不了的，但對她來說是個重要的問題，並想要追趕上其他人。</div></th>
+           <th><input type="radio" name="anime15" value="15" id="a15"></th>
+       </tr>
+   </table>
+   <br>
+ <input type="submit" value="submit" onclick="javascript:vote()">
+   <input type="reset" value="reset">
+   </div>
+    </form>
+</body>
+</html>
