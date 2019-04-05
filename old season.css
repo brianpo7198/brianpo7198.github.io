@@ -115,6 +115,50 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.test{
+    margin-top:50px;
+    font-size: 16px; 
+    color: white;
+    left: 50;
+    border:1px;
+    
+    background-color: rgba( 0, 31, 39, 0.35)
+    
+}
+.test1{
+    margin-top:72px;
+    float:left;
+    width: 60%;
+    top: 60px;
+    border:1px;
+    padding:8px;
+    line-height: 1.8;
+    background-color: rgba( 0, 31, 39, 0.35)
+    
+}
+.test2{
+    margin-top:72px;
+    left:30;
+    width: 60%;
+    top: 60px;
+    border:1px;
+    padding:8px;
+    line-height: 1.8;
+    background-color: rgba( 0, 31, 39, 0.35)
+    
+}
+.test3{
+    margin-top:72px;
+    float:left;
+    width: 60%;
+    top: 60px;
+    border:1px;
+    padding:8px;
+    line-height: 1.8;
+ background-color:rgba(204,230,255,0.3);
+    
+}
 h1{
     color: aqua;
     text-shadow: 0 0 5px #FF0000, 0 0 5px #FF00FF;
